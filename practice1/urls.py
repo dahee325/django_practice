@@ -23,4 +23,5 @@ urlpatterns = [
     path('profile/<username>/<int:userage>/', views.profile),
     path('godme/<username>/', views.godme),
     path('godme2/<username>/', views.godme2),
+    path('words/', views.words),
 ]

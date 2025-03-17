@@ -68,3 +68,15 @@ def godme2(request, username):
         'feelings': feelings,
     }
     return render(request, 'godme2.html', context)
+
+def words(request):
+    fake = Faker()
+    fake_words = []
+
+    for i in range(100):
+        fake_words.append(fake.words())
+
+    context = {
+        'fake_words': fake_words
+    }
+    return render(request, 'words.html', context)
