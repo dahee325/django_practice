@@ -21,4 +21,5 @@ from practice1_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('profile/<username>/<int:userage>/', views.profile),
+    path('godme/<username>/', views.godme),
 ]
